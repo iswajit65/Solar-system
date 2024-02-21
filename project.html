@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Examination System</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Customize your styles for buttons, forms, etc. */
+    </style>
+</head>
+
+<body>
+    <h1>Online Examination System</h1>
+    <form id="loginForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- Add more HTML elements for tests, questions, etc. -->
+
+    <script>
+        // Add your JavaScript logic here
+        document.getElementById("loginForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            // Validate login credentials and redirect to test page
+            // You can use AJAX to communicate with the server for authentication
+        });
+    </script>
+</body>
+
+</html>
